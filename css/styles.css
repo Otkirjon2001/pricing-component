@@ -193,7 +193,10 @@ img{
 }
 .card-box-inner-item {
   padding-top: 12px;
-  padding-bottom: 12px;
+}
+.card-box-inner-item-text{
+  margin: 0;
+  margin-bottom: 12px;
 }
 .about-link {
   padding: 14px 66px;
