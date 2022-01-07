@@ -178,6 +178,7 @@ img{
   font-size: 72px;
   line-height: 71px;
   letter-spacing: -2.16px;
+  transition: 0.4s;
 }
 .price-span {
   font-size: 40px;
