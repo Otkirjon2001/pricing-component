@@ -14,24 +14,26 @@
 
 <body>
   <main class="main-content">
-    <h1 class="visually-hidden">Pricing Component</h1>
     <div class="main-container container">
       <header class="site-header">
-        <h2 class="site-heading">Our Pricing</h2>
-        <ul class="site-header-list">
-          <li class="site-header-item">Annually</li>
-          <li class="site-header-item">
-            <label class="checkbox-bg">
-              <input class="site-header-toggle visually-hidden" type="checkbox">
-              <span class="toggle-circle"></span>
-            </label>
-          </li>
-          <li class="site-header-item">Monthly</li>
-        </ul>
+        <h1 class="site-heading">Our Pricing</h1>
+        <form class="switch">
+          <input type="radio" class="switch-input-annually visually-hidden" name="switch-input-radio" value="annually"
+            id="switch-annually" checked>
+          <input type="radio" class="switch-input-monthly visually-hidden" name="switch-input-radio" value="monthly"
+            id="switch-monthly">
+          <label for="switch-annually" class="switch-label">Annually</label>
+          <div class="switch-control">
+            <div class="switch-control-circle"></div>
+            <label for="switch-annually" class="switch-label switch-annually"></label>
+            <label for="switch-monthly" class="switch-label switch-monthly"></label>
+          </div>
+          <label for="switch-monthly" class="switch-label">Monthly</label>
+        </form>
       </header>
       <ul class="card-box-list">
         <li class="card-box-item">
-          <p class="card-top-text">Basic</p>
+          <h3 class="card-top-text">Basic</h3>
           <div class="price-box">
             <span class="price-span">$</span>
             <p class="price price-1">19.99</p>
@@ -57,7 +59,7 @@
           <a class="about-link" href="#">LEARN MORE</a>
         </li>
         <li class="card-box-item card-box-item-active">
-          <p class="card-top-text">Professional</p>
+          <h3 class="card-top-text">Professional</h3>
           <div class="price-box">
             <span class="price-span">$</span>
             <p class="price price-2">24.99</p>
@@ -83,7 +85,7 @@
           <a class="about-link about-link-active" href="#">LEARN MORE</a>
         </li>
         <li class="card-box-item">
-          <p class="card-top-text">Master</p>
+          <h3 class="card-top-text">Master</h3>
           <div class="price-box">
             <span class="price-span">$</span>
             <p class="price price-3">39.99</p>
