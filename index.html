@@ -16,13 +16,13 @@
   <!-- MAIN-CONTENT -->
   <main class="main-content">
     <div class="main-container container">
+      <!-- SITE-HEADER -->
       <header class="site-header">
         <h1 class="site-heading">Our Pricing</h1>
         <form class="switch">
-          <input type="radio" class="switch-input-annually visually-hidden" name="switch-input-radio" value="annually"
-            id="switch-annually">
-          <input type="radio" class="switch-input-monthly visually-hidden" name="switch-input-radio" value="monthly"
-            id="switch-monthly" checked>
+          <input  class="switch-input-annually visually-hidden" type="radio" name="switch-input-radio" value="annually" id="switch-annually">
+          <input  class="switch-input-monthly visually-hidden" type="radio" name="switch-input-radio" value="monthly"
+          id="switch-monthly" checked>
           <label for="switch-annually" class="switch-label">Annually</label>
           <div class="switch-control">
             <div class="switch-control-circle"></div>
@@ -32,6 +32,8 @@
           <label for="switch-monthly" class="switch-label">Monthly</label>
         </form>
       </header>
+      <h2 class="visually-hidden">The best tariffs</h2>
+      <!-- CARD-BOX -->
       <ul class="card-box-list">
         <li class="card-box-item" data-pricing-annually="199.99" data-pricing-monthly="19.99">
           <h3 class="card-top-text">Basic</h3>
@@ -105,7 +107,6 @@
       </ul>
     </div>
   </main>
-
   <script src="js/main.js"></script>
 </body>
 

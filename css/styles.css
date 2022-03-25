@@ -5,6 +5,7 @@
   --font-color-2:#4A4D60;
   --font-heading-color: #6E728E;
 }
+
 /* FONTS */
 @font-face {
   font-family: 'Montserrat';
@@ -14,7 +15,8 @@
   src: url('../fonts/montserrat-v18-latin-700.woff2') format('woff2'),
        url('../fonts/montserrat-v18-latin-700.woff') format('woff');
 }
-/* GLOBAL */
+
+/* GLOBAL-STYLES */
 html{
   box-sizing: border-box;
   height: 100%;
@@ -34,12 +36,12 @@ body{
   font-weight: bold;
   font-size: 15px;
   line-height: 28px;
+  color: var(--font-heading-color);
   background-color: #F7F7FE;
   background-image: url(../imgs/bg-img.svg),
                     url(../imgs/bg-image-2.svg);
   background-repeat: no-repeat no-repeat;
   background-position: calc(50% + 430px) 0, calc(50% - 500px) 510px;
-  color: var(--font-heading-color);
 }
 img{
   max-width: 100%;
@@ -59,8 +61,8 @@ img{
 
 /* CONTAINER  */
 .container{
-  width: 100%;
   max-width: 1150px;
+  width: 100%;
   padding-right: 50px;
   padding-left: 50px;
   margin-right: auto;
@@ -102,10 +104,10 @@ img{
   height: 32px;
   padding: 4px;
   border-radius: 16px;
-  cursor: pointer;
   background-color: #696EDD;
   background-image: linear-gradient(135deg, #A2A7F0 0%, #696EDD 100%);
   transition: opacity 0.4s ease;
+  cursor: pointer;
 }
 .switch-control-circle {
   width: 24px;
@@ -121,7 +123,6 @@ img{
   width: 100%;
   height: 100%;
   cursor: pointer;
-
 }
 .switch-annually {
   position: absolute;
@@ -153,6 +154,8 @@ img{
 .switch-label:nth-child(5){
   margin-left: 24px;
 }
+
+/* CARD-BOX */
 .card-box-list {
   display: flex;
   align-items: center;
@@ -164,10 +167,10 @@ img{
 }
 .card-box-item {
   padding: 31px;
+  border-radius: 10px 0px 0px 10px;
   background-color: var(--font-color);
   text-align: center;
   box-shadow: 0px 20px 40px rgba(212, 210, 244, 0.5);
-  border-radius: 10px 0px 0px 10px;
 }
 .card-top-text {
   margin-top: 0;
@@ -180,10 +183,10 @@ img{
   padding-bottom: 32px;
 }
 .card-box-hr{
+  width: 100%;
+  height: 1px;
   margin: 0;
   border: 0;
-  height: 1px;
-  width: 100%;
   background-color: #6E728E;
   opacity: 0.25;
 }
@@ -220,33 +223,33 @@ img{
   font-size: 13px;
   line-height: 16px;
   letter-spacing: 1.39286px;
-  text-decoration: none;
+  border: 1px solid #696EDD ;
+  border-radius: 6px;
   color: var(--font-color);
   background-color: #696EDD;
   background: linear-gradient(135deg, #A2A7F0 0%, #696EDD 100%);
-  border-radius: 6px;
-  border: 1px solid #696EDD ;
   transition: all 0.6s ease;
+  text-decoration: none;
 }
 .about-link:hover{
-  background: var(--font-color);
-  color: var(--font-heading-color);
   border-color: var(--font-heading-color);
+  color: var(--font-heading-color);
+  background: var(--font-color);
 }
 .card-box-item-active {
   padding: 55px 31px;
-  box-shadow: 0px 20px 40px rgba(212, 210, 244, 0.5);
   border-radius: 10px;
+  color: var(--font-color);
   background-color:#696EDD;
   background-image: var(--primary-color);
-  color: var(--font-color);
+  box-shadow: 0px 20px 40px rgba(212, 210, 244, 0.5);
 }
 .about-link-active{
   color: var(--font-heading-color);
   background: var(--font-color);
 }
 .about-link-active:hover{
+  border-color: var(--font-color);
   color: var(--font-color);
   background: var(--primary-color);
-  border-color: var(--font-color);
 }
