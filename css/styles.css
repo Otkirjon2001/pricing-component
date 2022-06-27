@@ -82,23 +82,25 @@ img{
   align-items: center;
   flex-direction: column;
 }
-.site-heading {
+.site-header__title {
   margin-top: 0;
   margin-bottom: 42px;
   font-size: 32px;
   line-height: 39px;
+}
+.site-header__switch{
+  margin-bottom: 65px;
 }
 
 /* SWITCH */
 .switch {
   display: flex;
   align-items: center;
-  margin-bottom: 65px;
 }
-.switch-input-monthly:checked ~.switch-control .switch-control-circle {
+.switch__input-monthly:checked ~.switch__control .switch__control-circle {
   transform: translateX(24px);
 }
-.switch-control {
+.switch__control {
   position: relative;
   width: 56px;
   height: 32px;
@@ -109,14 +111,14 @@ img{
   transition: opacity 0.4s ease;
   cursor: pointer;
 }
-.switch-control-circle {
+.switch__control-circle {
   width: 24px;
   height: 24px;
   border-radius: 50%;
   background-color: var(--font-color);
   transition: transform 0.4s ease;
 }
-.switch-monthly {
+.switch__monthly {
   position: absolute;
   left: 0;
   top: 0;
@@ -124,7 +126,7 @@ img{
   height: 100%;
   cursor: pointer;
 }
-.switch-annually {
+.switch__annually {
   position: absolute;
   left: 0;
   top: 0;
@@ -132,12 +134,11 @@ img{
   height: 100%;
   cursor: pointer;
 }
-.switch-input-annually:checked ~ .switch-control .switch-monthly,
-.switch-input-monthly:checked ~ .switch-control .switch-annually
-{
+.switch__input-annually:checked ~ .switch__control .switch__monthly,
+.switch__input-monthly:checked ~ .switch__control .switch__annually{
   z-index: 5;
 }
-.switch-label {
+.switch__label {
   font-size: 15px;
   line-height: 28px;
   color: var(--font-heading-color);
@@ -145,18 +146,18 @@ img{
   transition: opacity 0.4s ease;
   cursor: pointer;
 }
-.switch-label:hover{
+.switch__label:hover{
   opacity: 1;
 }
-.switch-label:nth-child(3){
+.switch__label:nth-child(3){
   margin-right: 24px;
 }
-.switch-label:nth-child(5){
+.switch__label:nth-child(5){
   margin-left: 24px;
 }
 
-/* CARD-BOX */
-.card-box-list {
+/* PRICING */
+.pricing {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -165,19 +166,19 @@ img{
   margin-bottom: 100px;
   list-style: none;
 }
-.card-box-item {
+.price {
   padding: 31px;
   border-radius: 10px 0px 0px 10px;
   background-color: var(--font-color);
   text-align: center;
   box-shadow: 0px 20px 40px rgba(212, 210, 244, 0.5);
 }
-.card-top-text {
+.price__heading {
   margin-top: 0;
   margin-bottom: 24px;
   font-size: 18px;
 }
-.price-box{
+.price__box{
   display: flex;
   align-items: center;
   padding-bottom: 32px;
@@ -193,32 +194,32 @@ img{
 .card-box-item-active .card-box-hr{
   background-color: var(--font-color);
 }
-.price {
+.price__value {
   margin: 0;
   font-size: 72px;
   line-height: 71px;
   letter-spacing: -2.16px;
   transition: 0.4s;
 }
-.price-span {
+.price__span {
   font-size: 40px;
   line-height: 49px;
   letter-spacing: -1.2px;
 }
-.card-box-inner-list {
+.feature {
   margin: 0;
   margin-bottom: 32px;
   padding: 0;
   list-style: none;
 }
-.card-box-inner-item {
+.feature__item {
   padding-top: 12px;
 }
-.card-box-inner-item-text{
+.feature__text{
   margin: 0;
   margin-bottom: 12px;
 }
-.about-link {
+.price__link {
   padding: 14px 66px;
   font-size: 13px;
   line-height: 16px;
@@ -231,12 +232,12 @@ img{
   transition: all 0.6s ease;
   text-decoration: none;
 }
-.about-link:hover{
+.price__link:hover{
   border-color: var(--font-heading-color);
   color: var(--font-heading-color);
   background: var(--font-color);
 }
-.card-box-item-active {
+.price--active {
   padding: 55px 31px;
   border-radius: 10px;
   color: var(--font-color);
@@ -244,11 +245,11 @@ img{
   background-image: var(--primary-color);
   box-shadow: 0px 20px 40px rgba(212, 210, 244, 0.5);
 }
-.about-link-active{
+.price__link--active{
   color: var(--font-heading-color);
   background: var(--font-color);
 }
-.about-link-active:hover{
+.price__link--active:hover{
   border-color: var(--font-color);
   color: var(--font-color);
   background: var(--primary-color);

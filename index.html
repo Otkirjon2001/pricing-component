@@ -15,94 +15,82 @@
 <body>
   <!-- MAIN-CONTENT -->
   <main class="main-content">
-    <div class="main-container container">
+    <div class="main-content__container container">
       <!-- SITE-HEADER -->
-      <header class="site-header">
-        <h1 class="site-heading">Our Pricing</h1>
-        <form class="switch">
-          <input  class="switch-input-annually visually-hidden" type="radio" name="switch-input-radio" value="annually" id="switch-annually">
-          <input  class="switch-input-monthly visually-hidden" type="radio" name="switch-input-radio" value="monthly"
+      <header class="main-content__header site-header">
+        <h1 class="site-header__title">Our Pricing</h1>
+        <form class="site-header__switch switch">
+          <input  class="switch__input-annually visually-hidden" type="radio" name="switch-input-radio" value="annually" id="switch-annually">
+          <input  class="switch__input-monthly visually-hidden" type="radio" name="switch-input-radio" value="monthly"
           id="switch-monthly" checked>
-          <label for="switch-annually" class="switch-label">Annually</label>
-          <div class="switch-control">
-            <div class="switch-control-circle"></div>
-            <label for="switch-annually" class="switch-label switch-annually"></label>
-            <label for="switch-monthly" class="switch-label switch-monthly"></label>
+          <label for="switch-annually" class="switch__label">Annually</label>
+          <div class="switch__control">
+            <div class="switch__control-circle"></div>
+            <label for="switch-annually" class="switch__label switch__label--annually"></label>
+            <label for="switch-monthly" class="switch__label switch__label--monthly"></label>
           </div>
-          <label for="switch-monthly" class="switch-label">Monthly</label>
+          <label for="switch-monthly" class="switch__label">Monthly</label>
         </form>
       </header>
       <h2 class="visually-hidden">The best tariffs</h2>
-      <!-- CARD-BOX -->
-      <ul class="card-box-list">
-        <li class="card-box-item" data-pricing-annually="199.99" data-pricing-monthly="19.99">
-          <h3 class="card-top-text">Basic</h3>
-          <div class="price-box">
-            <span class="price-span">$</span>
-            <p class="price price-1">19.99</p>
+      <!-- PRICING -->
+      <ul class="main-content__pricing pricing">
+        <li class="pricing__item price" data-pricing-annually="199.99" data-pricing-monthly="19.99">
+          <h3 class="price__heading">Basic</h3>
+          <div class="price__box">
+            <span class="price__span">$</span>
+            <p class="price__value price__value--1">19.99</p>
           </div>
-          <hr class="card-box-hr">
-          <ul class="card-box-inner-list">
-            <li class="card-box-inner-item">
-              <p class="card-box-inner-item-text">500 GB Storage</p>
-              <hr class="card-box-hr">
+          <ul class="feature">
+            <li class="feature__item">
+              <p class="feature__text">500 GB Storage</p>
             </li>
-            <li class="card-box-inner-item">
-              <p class="card-box-inner-item-text">2 Users Allowed</p>
-              <hr class="card-box-hr">
+            <li class="feature__item">
+              <p class="feature__text">2 Users Allowed</p>
             </li>
-            <li class="card-box-inner-item">
-              <p class="card-box-inner-item-text">Send up to 3 GB</p>
-              <hr class="card-box-hr">
+            <li class="feature__item">
+              <p class="feature__text">Send up to 3 GB</p>
             </li>
           </ul>
-          <a class="about-link" href="#">LEARN MORE</a>
+          <a class="price__link" href="#">LEARN MORE</a>
         </li>
-        <li class="card-box-item card-box-item-active" data-pricing-annually="249.99" data-pricing-monthly="24.99">
-          <h3 class="card-top-text">Professional</h3>
-          <div class="price-box">
-            <span class="price-span">$</span>
-            <p class="price price-2">24.99</p>
+        <li class="pricing__item price price--active" data-pricing-annually="249.99" data-pricing-monthly="24.99">
+          <h3 class="price__heading">Professional</h3>
+          <div class="price__box">
+            <span class="price__span">$</span>
+            <p class="price__value price__value--2">24.99</p>
           </div>
-          <hr class="card-box-hr">
-          <ul class="card-box-inner-list">
-            <li class="card-box-inner-item">
-              <p class="card-box-inner-item-text">1 TB Storage</p>
-              <hr class="card-box-hr">
+          <ul class="feature">
+            <li class="feature__item">
+              <p class="feature__text">1 TB Storage</p>
             </li>
-            <li class="card-box-inner-item">
-              <p class="card-box-inner-item-text">5 Users Allowed</p>
-              <hr class="card-box-hr">
+            <li class="feature__item">
+              <p class="feature__text">5 Users Allowed</p>
             </li>
-            <li class="card-box-inner-item">
-              <p class="card-box-inner-item-text">Send up to 10 GB</p>
-              <hr class="card-box-hr">
+            <li class="feature__item">
+              <p class="feature__text">Send up to 10 GB</p>
             </li>
           </ul>
-          <a class="about-link about-link-active" href="#">LEARN MORE</a>
+          <a class="price__link price__link--active" href="#">LEARN MORE</a>
         </li>
-        <li class="card-box-item" data-pricing-annually="399.99" data-pricing-monthly="39.99">
-          <h3 class="card-top-text">Master</h3>
-          <div class="price-box">
-            <span class="price-span">$</span>
-            <p class="price price-3">39.99</p>
+        <li class="pricing__item price" data-pricing-annually="399.99" data-pricing-monthly="39.99">
+          <h3 class="price__heading">Master</h3>
+          <div class="price__box">
+            <span class="price__span">$</span>
+            <p class="price__value price__value--3">39.99</p>
           </div>
-          <hr class="card-box-hr">
-          <ul class="card-box-inner-list">
-            <li class="card-box-inner-item">
-              <p class="card-box-inner-item-text">2 TB Storage</p>
-              <hr class="card-box-hr">
+          <ul class="feature">
+            <li class="feature__item">
+              <p class="feature__text">2 TB Storage</p>
             </li>
-            <li class="card-box-inner-item">
-              <p class="card-box-inner-item-text">10 Users Allowed</p>
-              <hr class="card-box-hr">
+            <li class="feature__item">
+              <p class="feature__text">10 Users Allowed</p>
             </li>
-            <li class="card-box-inner-item">
-              <p class="card-box-inner-item-text">Send up to 20 GB</p>
-              <hr class="card-box-hr">
+            <li class="feature__item">
+              <p class="feature__text">Send up to 20 GB</p>
             </li>
           </ul>
-          <a class="about-link" href="#">LEARN MORE</a>
+          <a class="price__link" href="#">LEARN MORE</a>
         </li>
       </ul>
     </div>
